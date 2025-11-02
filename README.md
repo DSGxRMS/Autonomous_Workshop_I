@@ -43,12 +43,30 @@ Precision: 0.89 Recall: 0.89 F1-Score: 0.89 IoU: 91.48
 ### How to Run
 To run the model, please first install all the dependencies ([requirements.txt](requirements.txt)) into a virtual environment and download the model and weights into the model folder (or run the shell script).
 
+## Setup a Virtual Environment & source it
+```bash
+#macOS / Linux
+python3 -m venv .venv
+source .venv/bin/activate
+
+
+# Windows (Powershell)
+
+python -m venv .venv
+. .\.venv\Scripts\Activate.ps1
+```
+### Install Requirements
+```
+pip install -r requirements.txt
+```
+
 ```bash
 # mac / linux
 cd models && sh ./download-models.sh
+#chmod +x ./download-models.sh <- run this in case you get a policy error>
 
 # windows
-cd models && powershell .\download-models.ps1
+cd models && powershell -ExecutionPolicy Bypass -File ./models/download-models.ps1
 
 ```
 
