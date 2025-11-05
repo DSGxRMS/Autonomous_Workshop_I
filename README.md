@@ -27,7 +27,8 @@ cd models && sh ./download-models.sh
 #chmod +x ./download-models.sh <- run this in case you get a policy error>
 
 # windows
-cd models && powershell -ExecutionPolicy Bypass -File ./download-models.ps1
+cd models
+powershell -ExecutionPolicy Bypass -File ./download-models.ps1
 
 ```
 
