@@ -50,10 +50,10 @@ python3 -m venv .venv
 source .venv/bin/activate
 
 
-# Windows (Powershell)
+# Windows (Powershell), under project dir
 
 python -m venv .venv
--ExecutionPolicy Bypass -File . .\.venv\Scripts\Activate.ps1
+.venv\Scripts\Activate.ps1
 ```
 ### Install Requirements
 ```
@@ -66,7 +66,7 @@ cd models && sh ./download-models.sh
 #chmod +x ./download-models.sh <- run this in case you get a policy error>
 
 # windows
-cd models && powershell -ExecutionPolicy Bypass -File ./models/download-models.ps1
+cd models && powershell -ExecutionPolicy Bypass -File ./download-models.ps1
 
 ```
 
@@ -95,7 +95,7 @@ For YOLOv4-Tiny use the following command:
 
 ```bash
 # with python 3
-python demo_webcam.py -n v4-tiny
+python3 demo_webcam.py -n v4-tiny
 ```
 
 
