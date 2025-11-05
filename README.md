@@ -53,7 +53,7 @@ source .venv/bin/activate
 # Windows (Powershell)
 
 python -m venv .venv
-. .\.venv\Scripts\Activate.ps1
+-ExecutionPolicy Bypass -File . .\.venv\Scripts\Activate.ps1
 ```
 ### Install Requirements
 ```
@@ -74,21 +74,21 @@ Then run the following command to start a webcam detector with YOLOv3:
 
 ```bash
 # with python 3
-python demo_webcam.py
+python3 demo_webcam.py
 ```
 
 Or this one to run a webcam detrector with YOLOv3 tiny:
 
 ```bash
 # with python 3
-python demo_webcam.py -n tiny
+python3 demo_webcam.py -n tiny
 ```
 
 For YOLOv3-Tiny-PRN use the following command:
 
 ```bash
 # with python 3
-python demo_webcam.py -n prn
+python3 demo_webcam.py -n prn
 ```
 
 For YOLOv4-Tiny use the following command:
